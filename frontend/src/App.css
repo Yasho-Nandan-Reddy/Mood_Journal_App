@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Softer background */
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  /* text-align: center; App content will be aligned by its children */
+}
+
+.App-header { /* Renamed for clarity, applied to header element in App.js */
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex; /* For aligning title and logout button */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.App-header button {
+  background-color: #ff4d4f; /* Contrasting color for logout */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.App-header button:hover {
+  background-color: #d9363e;
+}
+
+.App-main { /* Applied to main element in App.js */
+  padding: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* General component container styling */
+/* These classes are expected to be on the root div of each respective component */
+.LoginComponent,
+.DashboardComponent, /* Assuming Dashboard will have a wrapper div with this class */
+.MoodFormComponent,
+.MoodHistoryComponent,
+.MoodChartComponent {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-align: left; /* Default to left align content */
+}
+
+/* Headings within components */
+.LoginComponent h2,
+.DashboardComponent h2, /* For Dashboard's main title */
+.MoodFormComponent h3,
+.MoodHistoryComponent h3,
+.MoodChartComponent h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333; /* Darker heading color */
+  font-size: 1.5rem; /* Consistent heading size */
+  font-weight: 500; /* Medium weight */
+}
+
+/* Form styling - targeted to forms within components */
+.MoodFormComponent form div,
+.LoginComponent form div { /* If Login has a form */
+  margin-bottom: 1rem; /* More space between form elements */
+}
+
+.MoodFormComponent form label,
+.LoginComponent form label {
+  display: block;
+  margin-bottom: 0.5rem; /* Space between label and input */
+  font-weight: 500; /* Slightly bolder labels */
+}
+
+.MoodFormComponent form input[type="text"],
+.MoodFormComponent form input[type="date"],
+.MoodFormComponent form select,
+.MoodFormComponent form textarea,
+.LoginComponent form input[type="text"] { /* Assuming Login has text input */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.MoodFormComponent form textarea {
+  min-height: 80px; /* Minimum height for textarea */
+}
+
+.MoodFormComponent form button[type="submit"],
+.LoginComponent form button[type="submit"] {
+  display: inline-block; /* Allow other elements beside it if needed */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.MoodFormComponent form button[type="submit"]:hover,
+.LoginComponent form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Specific styling for Login component if needed */
+.LoginComponent {
+  max-width: 400px; /* Constrain width of login box */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Specific styling for Dashboard children if needed */
+.DashboardComponent > div { /* If Dashboard has direct children that need spacing */
+  /* margin-bottom: 1rem; */ /* Example */
+}

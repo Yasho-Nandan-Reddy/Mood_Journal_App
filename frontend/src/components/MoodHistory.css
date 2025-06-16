@@ -1,0 +1,78 @@
+.MoodHistoryComponent {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.MoodHistoryComponent h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: left;
+}
+
+.mood-log-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mood-log-item {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.log-date {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.log-mood {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.mood-tag {
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.mood-happy { background-color: #28a745; } /* Green */
+.mood-sad { background-color: #007bff; } /* Blue */
+.mood-angry { background-color: #dc3545; } /* Red */
+.mood-meh { background-color: #6c757d; } /* Gray */
+.mood-okay { background-color: #ffc107; color: #333; } /* Yellow */
+.mood-excited { background-color: #fd7e14; } /* Orange */
+.mood-calm { background-color: #17a2b8; } /* Teal */
+/* Add more mood colors as needed */
+
+.log-journal {
+  margin-top: 8px;
+  font-size: 0.95em;
+}
+
+.log-journal strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+.log-journal p {
+  margin: 0;
+  white-space: pre-wrap; /* Preserve line breaks in journal entry */
+  color: #444;
+}
+
+.MoodHistoryComponent > p { /* "No mood entries yet" message styling */
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}

@@ -1,0 +1,31 @@
+.MoodChartComponent {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.MoodChartComponent h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: left; /* Or center, depending on preference */
+}
+
+.chart-container {
+  position: relative; /* Needed for Chart.js responsiveness */
+  margin: auto;
+  height: 60vh; /* Adjust as needed, or use max-height */
+  width: 80vw;  /* Adjust as needed, or use max-width */
+  max-width: 700px; /* Example max width */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.MoodChartComponent > p { /* "Not enough data" message styling */
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
